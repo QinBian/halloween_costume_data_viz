@@ -1,0 +1,52 @@
+State,Abbrev,Costume,Type,Type_code,Gender,Gender_code
+Alabama,AL,Wonder Woman,Movie-characters,2,Female,1
+Alaska,AK,Ninja,Generics,1,Gender-neutral,3
+Arizona,AZ,Wonder Woman,Movie-characters,2,Female,1
+Arkansas,AR,Clown,Generics,1,Gender-neutral,3
+California,CA,Wonder Woman,Movie-characters,2,Female,1
+Colorado,CO,Wonder Woman,Movie-characters,2,Female,1
+Connecticut,CT,Wonder Woman,Movie-characters,2,Female,1
+Delaware,DE,IT,Movie-characters,2,Male,2
+District of Columbia,DC,Harley Quinn,Movie-characters,2,Female,1
+Florida,FL,Wonder Woman,Movie-characters,2,Female,1
+Georgia,GA,Harley Quinn,Movie-characters,2,Female,1
+Hawaii,HI,Wonder Woman,Movie-characters,2,Female,1
+Idaho,ID,Rabbit,Animals,3,Gender-neutral,3
+Illinois,IL,Wonder Woman,Movie-characters,2,Female,1
+Indiana,IN,Dinosaur,Animals,3,Gender-neutral,3
+Iowa,IA,Wonder Woman,Movie-characters,2,Female,1
+Kansas,KS,Wonder Woman,Movie-characters,2,Female,1
+Kentucky,KY,Clown,Generics,1,Gender-neutral,3
+Louisiana,LA,Wonder Woman,Movie-characters,2,Female,1
+Maine,ME,Superhero,Movie-characters,2,Male,2
+Maryland,MD,Wonder Woman,Movie-characters,2,Female,1
+Massachusetts,MA,Wonder Woman,Movie-characters,2,Female,1
+Michigan,MI,Wonder Woman,Movie-characters,2,Female,1
+Minnesota,MN,Zombie,Fantasy-creatures,4,Gender-neutral,3
+Mississippi,MS,Mouse,Animals,3,Gender-neutral,3
+Missouri,MO,Clown,Generics,1,Gender-neutral,3
+Montana,MT,Dinosaur,Animals,3,Gender-neutral,3
+Nebraska,NE,Wonder Woman,Movie-characters,2,Female,1
+Nevada,NV,Wonder Woman,Movie-characters,2,Female,1
+New Hampshire,NH,Rabbit,Animals,3,Gender-neutral,3
+New Jersey,NJ,Wonder Woman,Movie-characters,2,Female,1
+New Mexico,NM,Harley Quinn,Movie-characters,2,Female,1
+New York,NY,Wonder Woman,Movie-characters,2,Female,1
+North Carolina,NC,Wonder Woman,Movie-characters,2,Female,1
+North Dakota,ND,Unicorn,Fantasy-creatures,4,Gender-neutral,3
+Ohio,OH,Harley Quinn,Movie-characters,2,Female,1
+Oklahoma,OK,Wonder Woman,Movie-characters,2,Female,1
+Oregon,OR,Unicorn,Fantasy-creatures,4,Gender-neutral,3
+Pennsylvania,PA,Harley Quinn,Movie-characters,2,Female,1
+Rhode Island,RI,Witch,Generics,1,Female,1
+South Carolina,SC,Harley Quinn,Movie-characters,2,Female,1
+South Dakota,SD,Witch,Generics,1,Female,1
+Tennessee,TN,Wonder Woman,Movie-characters,2,Female,1
+Texas,TX,Wonder Woman,Movie-characters,2,Female,1
+Utah,UT,Witch,Generics,1,Female,1
+Vermont,VT,Catwoman,Movie-characters,2,Female,1
+Virginia,VA,Wonder Woman,Movie-characters,2,Female,1
+Washington,WA,Wonder Woman,Movie-characters,2,Female,1
+West Virginia,WV,Clown,Generics,1,Gender-neutral,3
+Wisconsin,WI,Zombie,Fantasy-creatures,4,Gender-neutral,3
+Wyoming,WY,Joker,Movie-characters,2,Male,2

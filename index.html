@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>🎃 How Did People Dress Up for Halloween in 2017? 🎃</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css" >
+  <link rel="stylesheet" type="text/css" href="css/ghost.css" >
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Griffy" rel="stylesheet">
+
+    <!--jQuery must also be linked for Bootstrap to function-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- This website uses Bootstrap JS and CSS through links to MaxCDN's CDN supported version-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Scroll reval animation -->
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+
+</head>
+<body>
+    <!--This is the container for the grid in Bootstrap-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12" id = "title-section">
+        <h1 class="title"> How Did People Dress Up for Halloween in 2017?</h1>
+        <div class="text author">🎃 &nbsp; By <a href="http://qin-bian.com">Qin Bian</a>, Nov 2017</div>
+      </div>
+    <div class = "row">
+      <!-- Title and Map -->
+      <div class="col-sm-9" >
+        <div class="text" id = "intro"> Halloween has always been my favorite holiday. This is the one time of year that people can let go of their inhibitions and let their crazy take over. Anyone - young and old, rich and poor - can enjoy dressing up like a villain, superhero, favorite celebrity, cartoon characterm or monster. When we look at the halloween costumes collectively, the popular ones often reflect the significant events or pop culture happened earlier that year. This website explores what is the most popular Halloween costume in each State, and hopefully gives you a glimpse of what is trendy in 2017. </div>
+        <div id="map"></div>
+        <div id = "tooltip" class = "hidden">
+          <p><strong id = "tooltip-state"></strong></p>
+          <p><span id = "tooltip-val"></span></p>
+        </div>
+        <div class="text" id="state-selected">(Click on states or legends on the right.)</div>
+
+      </div>
+
+      <div class="col-sm-3">
+        <!--gender legend-->
+        <div id="gender-lengend-section">
+          <div class="section-title text halloween-animation" id="costume-audience-title">Costume Audience</div>
+          <div class = "gender-legend flex-container" id="Male">
+            <div class = "lengend-circle male"></div>
+            <span class = "text">Male</span>
+          </div>
+          <div class = "gender-legend flex-container" id="Female">
+            <div class = "lengend-circle female"></div>
+            <span class = "text">Female</span>
+          </div>
+          <div class = "gender-legend flex-container" id="Gender-neutral">
+            <div class = "lengend-circle neutral"></div>
+            <span class = "text">Gender Neutral</span>
+          </div>
+        </div>
+        <!--type legend-->
+        <div id="type-lengend-section">
+          <div class="section-title text halloween-animation" id="costume-type-title">Costume Type</div>
+          <div class="type-section" id = "Generics">
+            <div class = "type-title-container flex-container" id = "Generics">
+              <div class = "lengend-circle generics"></div>
+              <div class="text type-title">Generics</div>
+            </div>
+            <div class="flex-container">
+              <div class="costume-container" id = "Ninja" data-type="Generics">
+                <div class="costume-pic-container">
+                  <img class="costume-pic hvr-pop" id = "ninja-pic" src="img/costumes/ninja.jpg" alt= "ninja picture">
+                </div>
+                <div class="costume-text text">Ninja</div>
+              </div>
+
+              <div class="costume-container" id = "Clown" data-type="Generics">
+                <div class="costume-pic-container">
+                  <img class="costume-pic hvr-pop" id = "clown-pic" src="img/costumes/clown.jpg" alt= "clown picture">
+                </div>
+                <div class="costume-text text">Clown</div>
+              </div>
+
+              <div class="costume-container" id = "Witch" data-type="Generics">
+                <div class="costume-pic-container">
+                  <img class="costume-pic hvr-pop" id = "witch-pic" src="img/costumes/witch.jpg" alt= "witch picture">
+                </div>
+                <div class="costume-text text">Witch</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="type-section" id = "Movie-characters">
+            <div class = "type-title-container flex-container" id ="Movie-characters">
+              <div class = "lengend-circle movie-characters"></div>
+              <div class="text type-title">Movie Characters</div>
+            </div>
+            <!-- Movie Characters, Row 1 -->
+            <div class="flex-container" id="mc-row-1">
+              <div class="costume-container" id = "Wonder-woman" data-type="Movie-characters">
+                <div class="costume-pic-container">
+                  <img class="costume-pic hvr-pop" id = "wonder-woman-pic" src="img/costumes/wonder-woman.jpg" alt= "wonder woman picture">
+                </div>
+                <div class="costume-text text">Wonder Woman</div>
+              </div>
+
+              <div class="costume-container" id = "Harley-quinn" data-type="Movie-characters">
+                <div class="costume-pic-container">
+                  <img class="costume-pic hvr-pop" id = "harley-quinn-pic" src="img/costumes/harley-quinn.jpg" alt= "harley quinn picture">
+                </div>
+                <div class="costume-text text">Harley Quinn</div>
+              </div>
+              <div class="costume-container" id = "IT" data-type="Movie-characters">
+                <div class="costume-pic-container">
+                  <img class="costume-pic hvr-pop" id = "it-pic" src="img/costumes/it.jpg" alt= "it picture">
+                </div>
+                <div class="costume-text text">IT</div>
+              </div>
+            </div>
+            <!-- Movie Characters, Row 2 -->
+            <div class="flex-container" id="mc-row-2">
+              <div class="costume-container" id = "Superhero" data-type="Movie-characters">
+                <div class="costume-pic-container">
+                  <img class="costume-pic hvr-pop" id = "super-hero-pic" src="img/costumes/super-hero.jpg" alt= "super hero picture">
+                </div>
+                <div class="costume-text text">Superhero</div>
+              </div>
+              <div class="costume-container" id = "Catwoman" data-type="Movie-characters">
+                <div class="costume-pic-container">
+                  <img class="costume-pic hvr-pop" id = "catwoman-pic" src="img/costumes/catwoman.png" alt= "catwoman picture">
+                </div>
+                <div class="costume-text text">Catwoman</div>
+              </div>
+              <div class="costume-container" id = "Joker" data-type="Movie-characters">
+                <div class="costume-pic-container">
+                  <img class="costume-pic hvr-pop" id = "joker-pic" src="img/costumes/joker.jpg" alt= "joker picture">
+                </div>
+                <div class="costume-text text">Joker</div>
+              </div>
+            </div>
+
+          </div>
+          <div class="type-section" id = "Animals">
+            <div class = "type-title-container flex-container" id="Animals">
+              <div class = "lengend-circle animals"></div>
+              <div class="text type-title">Animals</div>
+            </div>
+            <div class="flex-container">
+              <div class="costume-container" id = "Rabbit" data-type="Animals">
+                <div class="costume-pic-container">
+                  <img class="costume-pic hvr-pop" id = "rabbit-pic" src="img/costumes/rabbit.jpg" alt= "rabbit picture">
+                </div>
+                <div class="costume-text text">Rabbit</div>
+              </div>
+
+              <div class="costume-container" id = "Dinosaur" data-type="Animals">
+                <div class="costume-pic-container">
+                  <img class="costume-pic hvr-pop" id = "dinosaur-pic" src="img/costumes/dinosaur.jpg" alt= "dinosaur picture">
+                </div>
+                <div class="costume-text text">Dinosaur</div>
+              </div>
+
+              <div class="costume-container" id = "Mouse" data-type="Animals">
+                <div class="costume-pic-container">
+                  <img class="costume-pic hvr-pop" id = "mouse-pic" src="img/costumes/mouse.jpg" alt= "mouse picture">
+                </div>
+                <div class="costume-text text">Mouse</div>
+              </div>
+            </div>
+
+          </div>
+          <div class="type-section" id = "Fantasy Creatures">
+            <div class = "type-title-container flex-container" id ="Fantasy-creatures">
+              <div class = "lengend-circle fantasy-creatures"></div>
+              <div class="text type-title">Fantasy Creatures</div>
+            </div>
+            <div class="flex-container">
+              <div class="costume-container" id = "Zombie" data-type="Fantasy-creatures">
+                <div class="costume-pic-container">
+                  <img class="costume-pic hvr-pop" id = "zombie-pic" src="img/costumes/zombie.jpg" alt= "zombie picture">
+                </div>
+                <div class="costume-text text">Zombie</div>
+              </div>
+
+              <div class="costume-container" id = "Unicorn" data-type="Fantasy-creatures">
+                <div class="costume-pic-container">
+                  <img class="costume-pic hvr-pop" id = "unicorn-pic" src="img/costumes/unicorn.jpg" alt= "unicorn picture">
+                </div>
+                <div class="costume-text text">Unicorn</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 footnote">
+        <div class="text footnote-title"> Credits </div>
+        <div class="text footnote-text">This interactive data visualization is built with <a href="https://d3js.org/">D3.js</a>, using data from <a href="https://www.kaggle.com/GoogleNewsLab/frightgeist-2017-costumes-by-state"> Google's Frightgeist 2017: Costumes by State</a>.</div>
+        <div class="text footnote-text">The ghost animation is based on an <a href="https://codepen.io/ShopifyPartners/pen/PGyGOx">example</a> by <a href="https://gist.github.com/tiffanytse/703fddd7b77202f41cb3f0905429ec2c">Tiffany Tse</a>. Reveal animations are made with the <a href="https://github.com/jlmakes/scrollreveal">ScrollReveal</a> library.</div>
+        <div></div>
+
+      </div>
+    </div>
+  </div>
+
+    <!--d3 javascript-->
+  <script type="text/javascript" src="js/d3.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+  <script type="text/javascript" src="js/script2.js"></script>
+
+
+
+</body>
+</html>
